@@ -1,53 +1,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"    
     tools:context="app.caculator.MainActivity" >
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_gravity="center"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
         android:orientation="vertical"
-        android:paddingTop="10dp"
         android:weightSum="1.0" >
 
         <EditText
             android:id="@+id/input"
             android:layout_width="fill_parent"
             android:layout_height="100sp"
+            android:layout_gravity="end"
             android:layout_weight=".5"
-            android:background="@color/white"
-            android:focusable="false"
+            android:background="@drawable/rounded_corner_edittext"
+            android:cursorVisible="true"
+            android:gravity="end"
+            android:inputType="none"
+            android:scrollbars="vertical"
             android:text="" />
 
         <EditText
             android:id="@+id/output"
             android:layout_width="fill_parent"
             android:layout_height="30sp"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
             android:layout_weight=".5"
-            android:paddingTop="5dp"
-            android:background="@color/input"
+            android:background="@drawable/rounded_corner_edittext"
             android:focusable="false"
-            android:editable="false"
+            android:gravity="end"
+            android:inputType="none"
             android:text="" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="5dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
         android:weightSum="1.0" >
 
         <Button
@@ -55,7 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:onClick="onBtnClick"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="sin" />
 
         <Button
@@ -63,6 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="cos" />
 
         <Button
@@ -70,30 +71,32 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="tan" />
 
         <Button
-            android:id="@+id/btn_factorial"
+            android:id="@+id/btn_history"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="!" />
+            android:background="@drawable/rounded_corner_btn_his"
+            android:text="History" />
 
         <Button
-            android:id="@+id/btn_setting"
+            android:id="@+id/btn_ac"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="Mode" />
+            android:background="@drawable/rounded_corner_btn_ac"
+            android:text="AC" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
         android:weightSum="1.0" >
 
         <Button
@@ -101,6 +104,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="ln" />
 
         <Button
@@ -108,37 +112,41 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="log" />
 
         <Button
-            android:id="@+id/btn_sqrt"
+            android:id="@+id/btn_OpeningQuotation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="√" />
+            android:background="@drawable/rounded_corner_btn_func"
+            android:text="(" />
 
         <Button
-            android:id="@+id/btn_sqr"
+            android:id="@+id/btn_ClosingQuotation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="^" />
+            android:background="@drawable/rounded_corner_btn_func"
+            android:text=")" />
 
         <Button
-            android:id="@+id/btn_history"
+            android:id="@+id/btn_factorial"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="His" />
+            android:background="@drawable/rounded_corner_btn_func"
+            android:text="!" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="5dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
         android:weightSum="1.0" >
 
         <Button
@@ -146,6 +154,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="7" />
 
         <Button
@@ -153,6 +162,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="8" />
 
         <Button
@@ -160,30 +170,32 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="9" />
 
         <Button
-            android:id="@+id/btn_del"
+            android:id="@+id/btn_sqr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="DEL" />
+            android:background="@drawable/rounded_corner_btn_func"
+            android:text="^" />
 
         <Button
-            android:id="@+id/btn_ac"
+            android:id="@+id/btn_sqrt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="AC" />
+            android:background="@drawable/rounded_corner_btn_func"
+            android:text="√" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
         android:weightSum="1.0" >
 
         <Button
@@ -191,6 +203,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="4" />
 
         <Button
@@ -198,6 +211,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="5" />
 
         <Button
@@ -205,6 +219,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="6" />
 
         <Button
@@ -212,6 +227,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="×" />
 
         <Button
@@ -219,16 +235,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="÷" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
         android:weightSum="1.0" >
 
         <Button
@@ -236,6 +252,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="1" />
 
         <Button
@@ -243,6 +260,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="2" />
 
         <Button
@@ -250,6 +268,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="3" />
 
         <Button
@@ -257,6 +276,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="+" />
 
         <Button
@@ -264,16 +284,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="-" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
         android:weightSum="1.0" >
 
         <Button
@@ -281,6 +301,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_num"
             android:text="0" />
 
         <Button
@@ -288,20 +309,23 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="," />
+            android:background="@drawable/rounded_corner_btn_num"
+            android:text="." />
 
         <Button
             android:id="@+id/btn_negative"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:text="(-)" />
+            android:background="@drawable/rounded_corner_btn_num"
+            android:text="±" />
 
         <Button
             android:id="@+id/btn_div_plus"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="%" />
 
         <Button
@@ -309,6 +333,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:background="@drawable/rounded_corner_btn_func"
             android:text="=" />
     </LinearLayout>
 

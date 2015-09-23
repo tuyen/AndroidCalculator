@@ -1929,7 +1929,12 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020039;
         public static final int abc_textfield_search_material=0x7f02003a;
         public static final int ic_launcher=0x7f02003b;
-        public static final int notification_template_icon_bg=0x7f02003c;
+        public static final int notification_template_icon_bg=0x7f020041;
+        public static final int rounded_corner_btn_ac=0x7f02003c;
+        public static final int rounded_corner_btn_func=0x7f02003d;
+        public static final int rounded_corner_btn_his=0x7f02003e;
+        public static final int rounded_corner_btn_num=0x7f02003f;
+        public static final int rounded_corner_edittext=0x7f020040;
     }
     public static final class id {
         public static final int action0=0x7f09006f;
@@ -1962,24 +1967,24 @@ containing a value of this type.
         public static final int btn_7=0x7f09005b;
         public static final int btn_8=0x7f09005c;
         public static final int btn_9=0x7f09005d;
-        public static final int btn_ac=0x7f09005f;
+        public static final int btn_ClosingQuotation=0x7f090059;
+        public static final int btn_OpeningQuotation=0x7f090058;
+        public static final int btn_ac=0x7f090055;
         public static final int btn_comma=0x7f09006b;
         public static final int btn_cos=0x7f090052;
-        public static final int btn_del=0x7f09005e;
         public static final int btn_div_plus=0x7f09006d;
         public static final int btn_divide=0x7f090064;
-        public static final int btn_factorial=0x7f090054;
-        public static final int btn_history=0x7f09005a;
+        public static final int btn_factorial=0x7f09005a;
+        public static final int btn_history=0x7f090054;
         public static final int btn_ln=0x7f090056;
         public static final int btn_log=0x7f090057;
         public static final int btn_multi=0x7f090063;
         public static final int btn_negative=0x7f09006c;
         public static final int btn_plus=0x7f090068;
         public static final int btn_result=0x7f09006e;
-        public static final int btn_setting=0x7f090055;
         public static final int btn_sin=0x7f090051;
-        public static final int btn_sqr=0x7f090059;
-        public static final int btn_sqrt=0x7f090058;
+        public static final int btn_sqr=0x7f09005e;
+        public static final int btn_sqrt=0x7f09005f;
         public static final int btn_sub=0x7f090069;
         public static final int btn_tan=0x7f090053;
         public static final int buttonPanel=0x7f090036;
